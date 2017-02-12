@@ -18,6 +18,7 @@ RUN echo $TZ | tee /etc/timezone \
 RUN apt-get update && apt-get install -y --no-install-recommends \
         supervisor \
         cron \
+        git \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
